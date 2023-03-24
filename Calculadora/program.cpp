@@ -37,10 +37,10 @@ int main(){
         cout << "* para multiplicar" << endl;
         cout << "/ para dividir"  << endl;
         cout << "\% para resto de la división" << endl;
-        cout << "** para X elevado a Y" << endl;
-        cout << "rz para raíz de X con índice Y" << endl;
-        cout << "log para logaritmo de X en base Y" << endl;
-        cout << "pc para el X \% de Y" << endl;
+        cout << "** para " << x << " elevado a " << y << endl;
+        cout << "rz para raíz de " << x << " con índice " << y << endl;
+        cout << "log para logaritmo de " << x << " en base " << y << endl;
+        cout << "pc para el " << x << "\% de " << y << endl;
         cout << "'X' para cerrar" << endl;
 
         linea();
@@ -118,6 +118,7 @@ int main(){
         } else if (operadores == "pc"){ //X% de Y
             cout << (x*y)/100 << endl;
         } else if (operadores == "X" || operadores == "x"){
+            cout << "Aplicación cerrada" << endl;
             break;
         } else{ //Operador incorrecto
             cout << "Operador incorrecto, por favor introduzca otro: " << endl;
