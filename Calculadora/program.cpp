@@ -1,7 +1,6 @@
 #include <iostream>
 #include <math.h>
 #include <cmath>
-
 using namespace std;
 
 int linea (){
@@ -12,25 +11,26 @@ int linea (){
 int main(){
     linea();
     // Números que se van a operar
-    cout << "Escribe un número: " << endl;
+    cout << "Escribe un número: ";
     float x;
     cin >> x;
 
-    cout << "Escribe otro número: " << endl;
+    cout << "Escribe otro número: ";
     float y;
     cin >> y;
 
-    float a;
-    a = 1/y;
+    float z;
+    z = 1/y;
 
     linea();
     cout << "\n\n";
 
     while (true)
     {
+        cout << endl;
         linea();
         //Operaciones
-        cout << "Elija una opción \n";
+        cout << "Elija una opción: \n";
         cout << "1 para cambiar números" << endl;
         cout << "+ para sumar" << endl;
         cout << "- para restar" << endl;
@@ -47,16 +47,16 @@ int main(){
 
         //Preguntar sobre la opción elegida
         string operadores;
-        cout << "¿Tu opción?" << endl;
+        cout << "¿Tu opción? ";
         cin >> operadores;
         
         if (operadores == "1"){ //Cambiar valores
-            cout << "Escribe un número: " << endl;
+            cout << "Escribe un número: ";
             cin >> x;
 
-            cout << "Escribe otro número: " << endl;
+            cout << "Escribe otro número: ";
             cin >> y;
-           float a = 1/y;
+            float z = 1/y;
            
         } else if (operadores == "+"){ //Suma
             cout << x + y << endl;
@@ -84,31 +84,27 @@ int main(){
         } else if (operadores == "rz"){ //Raíces
             //Excepción con índices pares y x<0
             if (x == -1 && y == 2){
-                cout << "𝓲" << endl;
+                cout << "i" << endl;
             } else if (x < 0 && y == 2){
-                cout << to_string(pow(abs(x), a)) + "𝓲" << endl;
+                cout << to_string(pow(abs(x), z)) + "i" << endl;
             } else if (x < 0 && fmod(y, 2) != 0){
-                cout << pow(x, a) << endl;
+                cout << pow(x, z) << endl;
             } else if (x < 0 && fmod(y, 2) == 0){
-                cout << to_string(pow(abs(x), a)) + "𝓲" << endl;
+                cout << to_string(pow(abs(x), z)) + "i" << endl;
             } else{ //Raíz normal
-                cout << pow(x, a) << endl;
+                cout << pow(x, z) << endl;
             }
         } else if (operadores == "log"){ //Logaritmos
             //Excepciones
             if ( x <= 0 || y <= 0){
                 cout << "Ni el argumento ni la base pueden ser negativos" << endl;
                 
-                cout << "Escribe un número: " << endl;
-                float x;
+                cout << "Escribe un número: ";
                 cin >> x;
 
-                cout << "Escribe otro número: " << endl;
-                float y;
+                cout << "Escribe otro número: ";
                 cin >> y;
-
-                float a;
-                a = 1/y;   
+                float z = 1/y;
             } else if (y == 1){
                 cout << "0" << endl;
             } else{ //Logaritmo en base X de argumento Y
