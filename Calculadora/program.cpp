@@ -31,16 +31,16 @@ int main(){
         linea();
         //Operaciones
         cout << "Elija una opción: \n";
-        cout << "1 para cambiar números" << endl;
-        cout << "+ para sumar" << endl;
-        cout << "- para restar" << endl;
-        cout << "* para multiplicar" << endl;
-        cout << "/ para dividir"  << endl;
-        cout << "\% para resto de la división" << endl;
-        cout << "** para " << x << " elevado a " << y << endl;
-        cout << "rz para raíz de " << x << " con índice " << y << endl;
-        cout << "log para logaritmo de " << x << " en base " << y << endl;
-        cout << "pc para el " << x << "\% de " << y << endl;
+        cout << "1 → cambiar números" << endl;
+        cout << "+ → sumar" << endl;
+        cout << "- → restar" << endl;
+        cout << "* → multiplicar" << endl;
+        cout << "/ → dividir"  << endl;
+        cout << "\% → resto de la división" << endl;
+        cout << "** → " << x << " elevado a " << y << endl;
+        cout << "rz → raíz de " << x << " con índice " << y << endl;
+        cout << "log → logaritmo de " << x << " en base " << y << endl;
+        cout << "pc → " << x << "\% de " << y << endl;
         cout << "'X' para cerrar" << endl;
 
         linea();
@@ -107,8 +107,8 @@ int main(){
                 float z = 1/y;
             } else if (y == 1){
                 cout << "0" << endl;
-            } else{ //Logaritmo en base X de argumento Y
-                double lg = log(y) / log(x);
+            } else{ //Logaritmo de X en base Y
+                double lg = log(x) / log(y);
                 cout << lg << endl;
             }
         } else if (operadores == "pc"){ //X% de Y
