@@ -87,12 +87,13 @@ int main(){
                 cout << "i" << endl;
             } else if (x < 0 && y == 2){
                 cout << to_string(pow(abs(x), z)) + "i" << endl;
-            } else if (x < 0 && fmod(y, 2) != 0){
-                cout << pow(x, z) << endl;
+            } else if (x < 0 && fmod(y, 2) != 0) {
+                float root = pow(abs(x), 1.0 / y);  //Calcular raíz usando valor absoluto de x
+                cout << -root << endl;  //Aplicar el signo negativo al resultado
             } else if (x < 0 && fmod(y, 2) == 0){
                 cout << to_string(pow(abs(x), z)) + "i" << endl;
             } else{ //Raíz normal
-                cout << pow(x, z) << endl;
+                cout << pow(x, 1.0 / y) << endl; //Utilizar 1.0 / y para raíces de índice impar
             }
         } else if (operadores == "log"){ //Logaritmos
             //Excepciones
