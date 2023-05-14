@@ -1,9 +1,11 @@
 # Calculator-in-cpp
-The same thing I did with python but with C++ because I'm bored
+
+This little project was done to test my skills on C++ and to kill time because I'm bored as f*ck
 
 
-To run it (linux):
+To run it:
 
-g++ program.cpp -o calc (if you didn't download the binary file called 'calc')
 
-./calc
+`g++ program.cpp -o calc`
+
+`./calc`
