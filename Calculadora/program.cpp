@@ -61,7 +61,7 @@ int main(){
         } else if (operadores == "+"){ //Suma
             cout << x + y << endl;
         } else if (operadores == "-"){ //Resta
-            cout << x -y << endl;
+            cout << x - y << endl;
         } else if (operadores == "*"){ //Multiplicaión
             cout << x * y << endl;
         } else if (operadores == "/"){ //División
